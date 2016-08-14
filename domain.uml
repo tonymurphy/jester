@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.dreweaster.jester.domain</OriginalElement>
+  <nodes>
+    <node x="1216.0" y="0.0">com.dreweaster.jester.application.eventstore.EventStore</node>
+    <node x="1008.25" y="80.0">com.dreweaster.jester.infrastructure.eventstore.driven.DummyEventStore</node>
+    <node x="1504.8918918918916" y="1035.1891891891892">com.dreweaster.jester.example.domain.RegisterUser</node>
+    <node x="557.9362934362935" y="97.7760617760618">com.dreweaster.jester.application.eventstore.StreamEvent</node>
+    <node x="-374.19594594594594" y="195.10810810810818">com.dreweaster.jester.application.commandhandler.deduplicating.DeduplicatingCommandHandlerFactory.DeduplicatingCommandHandler</node>
+    <node x="862.1621621621621" y="452.7644787644788">com.dreweaster.jester.domain.CommandId</node>
+    <node x="1233.2432432432431" y="747.8648648648648">com.dreweaster.jester.domain.BehaviourBuilder</node>
+    <node x="248.06660231660237" y="238.15830115830107">com.dreweaster.jester.application.commandhandler.deduplicating.DeduplicatingCommandHandlerFactory.AggregateRootRef</node>
+    <node x="839.2335907335906" y="741.3861003861003">com.dreweaster.jester.application.commandhandler.deduplicating.TimeRestrictedCommandDeduplicationStrategy.Builder</node>
+    <node x="1568.2596525096524" y="225.98069498069498">com.dreweaster.jester.domain.Aggregate</node>
+    <node x="1568.9575289575291" y="949.7683397683397">com.dreweaster.jester.domain.DomainCommand</node>
+    <node x="999.1554054054054" y="195.55212355212353">com.dreweaster.jester.infrastructure.eventstore.driven.DummyEventStore.DummyPersistedEvent</node>
+    <node x="618.1119691119693" y="393.1351351351352">com.dreweaster.jester.domain.AggregateId</node>
+    <node x="587.75" y="226.0">com.dreweaster.jester.infrastructure.eventstore.driven.DummyEventStore.DummyStreamEvent</node>
+    <node x="-89.0945945945947" y="24.43629343629341">com.dreweaster.jester.application.commandhandler.deduplicating.DeduplicatingCommandHandlerFactory</node>
+    <node x="-38.64092664092681" y="801.9884169884169">com.dreweaster.jester.example.domain.UserEvent</node>
+    <node x="829.4131274131273" y="868.8146718146717">com.dreweaster.jester.application.commandhandler.deduplicating.TwentyFourHourWindowCommandDeduplicationStrategyFactory</node>
+    <node x="1757.7104247104248" y="542.2277992277993">com.dreweaster.jester.domain.CommandContext</node>
+    <node x="1007.2239382239381" y="1002.6447876447878">com.dreweaster.jester.example.infrastructure.ExampleEventHandler</node>
+    <node x="1229.0" y="1004.0">com.dreweaster.jester.example.domain.UserState</node>
+    <node x="-101.8262548262548" y="900.9613899613901">com.dreweaster.jester.example.domain.UserRegistered</node>
+    <node x="-169.50193050193053" y="499.73359073359063">com.dreweaster.jester.domain.AggregateRepository</node>
+    <node x="738.5907335907335" y="570.3088803088802">com.dreweaster.jester.application.commandhandler.deduplicating.TimeRestrictedCommandDeduplicationStrategy</node>
+    <node x="30.378378378378443" y="455.0540540540542">com.dreweaster.jester.application.commandhandler.AbstractCommandHandlerAggregateRepository</node>
+    <node x="1381.1698841698842" y="355.12741312741315">com.dreweaster.jester.example.domain.User.AlreadyCreated</node>
+    <node x="597.5945945945946" y="992.1389961389962">com.dreweaster.jester.example.application.UserService</node>
+    <node x="1285.6486486486485" y="529.6525096525098">com.dreweaster.jester.domain.Behaviour</node>
+    <node x="-155.84942084942094" y="594.2606177606177">com.dreweaster.jester.example.domain.UserRepository</node>
+    <node x="-134.53861003861005" y="332.02702702702703">com.dreweaster.jester.application.commandhandler.CommandHandlerFactory</node>
+    <node x="1407.631274131274" y="253.28571428571422">com.dreweaster.jester.example.domain.User</node>
+    <node x="1776.9362934362935" y="320.8880308880309">com.dreweaster.jester.domain.Aggregate.InvalidCommandException</node>
+    <node x="293.89034749034755" y="778.2316602316603">com.dreweaster.jester.example.infrastructure.CommandHandlerUserRepository</node>
+    <node x="1023.4343629343628" y="1146.6563706563707">com.dreweaster.jester.example.infrastructure.ExampleEventHandler.ResponseHandler</node>
+    <node x="-448.57528957528956" y="58.0945945945946">com.dreweaster.jester.application.commandhandler.CommandHandler</node>
+    <node x="471.61389961389955" y="506.9729729729729">com.dreweaster.jester.application.commandhandler.CommandEnvelope</node>
+    <node x="747.4676640926641" y="82.66795366795367">com.dreweaster.jester.application.eventstore.PersistedEvent</node>
+    <node x="-272.47104247104244" y="404.530888030888">com.dreweaster.jester.domain.AggregateRepository.AggregateRoot</node>
+    <node x="-88.44208494208505" y="734.1853281853281">com.dreweaster.jester.domain.DomainEvent</node>
+    <node x="1356.8523166023165" y="95.06563706563705">com.dreweaster.jester.application.eventstore.EventStore.OptimisticConcurrencyException</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.dreweaster.jester.application.commandhandler.AbstractCommandHandlerAggregateRepository" target="com.dreweaster.jester.domain.AggregateRepository">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.application.commandhandler.deduplicating.DeduplicatingCommandHandlerFactory.AggregateRootRef" target="com.dreweaster.jester.domain.CommandContext">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.application.commandhandler.CommandEnvelope" target="com.dreweaster.jester.domain.AggregateId">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.application.eventstore.StreamEvent" target="com.dreweaster.jester.application.eventstore.PersistedEvent">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.domain.Aggregate.InvalidCommandException" target="com.dreweaster.jester.domain.Aggregate">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.domain.Behaviour" target="com.dreweaster.jester.domain.CommandContext">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.example.domain.UserRepository" target="com.dreweaster.jester.domain.AggregateRepository">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.application.commandhandler.deduplicating.DeduplicatingCommandHandlerFactory.AggregateRootRef" target="com.dreweaster.jester.domain.AggregateId">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.example.infrastructure.ExampleEventHandler" target="com.dreweaster.jester.infrastructure.eventstore.driven.DummyEventStore">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.example.infrastructure.ExampleEventHandler" target="com.dreweaster.jester.application.commandhandler.deduplicating.TwentyFourHourWindowCommandDeduplicationStrategyFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.example.infrastructure.ExampleEventHandler" target="com.dreweaster.jester.example.application.UserService">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.infrastructure.eventstore.driven.DummyEventStore.DummyStreamEvent" target="com.dreweaster.jester.infrastructure.eventstore.driven.DummyEventStore">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.example.domain.UserEvent" target="com.dreweaster.jester.domain.DomainEvent">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.application.commandhandler.deduplicating.DeduplicatingCommandHandlerFactory.DeduplicatingCommandHandler" target="com.dreweaster.jester.application.commandhandler.CommandHandler">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.example.domain.User" target="com.dreweaster.jester.example.domain.User.AlreadyCreated">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.domain.BehaviourBuilder" target="com.dreweaster.jester.domain.CommandContext">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.application.eventstore.EventStore.OptimisticConcurrencyException" target="com.dreweaster.jester.application.eventstore.EventStore">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.example.infrastructure.ExampleEventHandler" target="com.dreweaster.jester.example.infrastructure.ExampleEventHandler.ResponseHandler">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.application.commandhandler.deduplicating.DeduplicatingCommandHandlerFactory.DeduplicatingCommandHandler" target="com.dreweaster.jester.application.commandhandler.deduplicating.DeduplicatingCommandHandlerFactory.AggregateRootRef">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.example.domain.User.AlreadyCreated" target="com.dreweaster.jester.example.domain.User">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.application.commandhandler.AbstractCommandHandlerAggregateRepository" target="com.dreweaster.jester.application.commandhandler.CommandHandlerFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.application.commandhandler.deduplicating.TimeRestrictedCommandDeduplicationStrategy.Builder" target="com.dreweaster.jester.domain.CommandId">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.infrastructure.eventstore.driven.DummyEventStore" target="com.dreweaster.jester.infrastructure.eventstore.driven.DummyEventStore.DummyPersistedEvent">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.application.commandhandler.deduplicating.DeduplicatingCommandHandlerFactory" target="com.dreweaster.jester.application.eventstore.EventStore">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.application.commandhandler.deduplicating.DeduplicatingCommandHandlerFactory.DeduplicatingCommandHandler" target="com.dreweaster.jester.application.commandhandler.deduplicating.DeduplicatingCommandHandlerFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.infrastructure.eventstore.driven.DummyEventStore.DummyPersistedEvent" target="com.dreweaster.jester.application.eventstore.PersistedEvent">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.infrastructure.eventstore.driven.DummyEventStore" target="com.dreweaster.jester.infrastructure.eventstore.driven.DummyEventStore.DummyStreamEvent">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.infrastructure.eventstore.driven.DummyEventStore" target="com.dreweaster.jester.application.eventstore.EventStore">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.domain.Behaviour" target="com.dreweaster.jester.domain.BehaviourBuilder">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.domain.BehaviourBuilder" target="com.dreweaster.jester.domain.Behaviour">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.application.commandhandler.deduplicating.DeduplicatingCommandHandlerFactory" target="com.dreweaster.jester.application.commandhandler.CommandHandlerFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.example.infrastructure.ExampleEventHandler" target="com.dreweaster.jester.example.infrastructure.CommandHandlerUserRepository">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.example.infrastructure.ExampleEventHandler" target="com.dreweaster.jester.application.commandhandler.deduplicating.DeduplicatingCommandHandlerFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.domain.CommandContext" target="com.dreweaster.jester.domain.Aggregate.InvalidCommandException">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.application.commandhandler.deduplicating.TimeRestrictedCommandDeduplicationStrategy.Builder" target="com.dreweaster.jester.application.commandhandler.deduplicating.TimeRestrictedCommandDeduplicationStrategy">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.example.infrastructure.CommandHandlerUserRepository" target="com.dreweaster.jester.example.domain.UserRepository">
+      <point x="-108.25" y="-26.0" />
+      <point x="63.33725868725867" y="657.011583011583" />
+      <point x="-73.73166023166038" y="643.4594594594594" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.example.domain.User" target="com.dreweaster.jester.domain.Aggregate">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.application.commandhandler.deduplicating.DeduplicatingCommandHandlerFactory.AggregateRootRef" target="com.dreweaster.jester.application.commandhandler.deduplicating.DeduplicatingCommandHandlerFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.application.commandhandler.deduplicating.TimeRestrictedCommandDeduplicationStrategy" target="com.dreweaster.jester.domain.CommandId">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.example.domain.RegisterUser" target="com.dreweaster.jester.domain.DomainCommand">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.application.commandhandler.deduplicating.TwentyFourHourWindowCommandDeduplicationStrategyFactory" target="com.dreweaster.jester.application.commandhandler.deduplicating.TimeRestrictedCommandDeduplicationStrategy.Builder">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.infrastructure.eventstore.driven.DummyEventStore" target="com.dreweaster.jester.application.eventstore.EventStore.OptimisticConcurrencyException">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.infrastructure.eventstore.driven.DummyEventStore.DummyStreamEvent" target="com.dreweaster.jester.application.eventstore.StreamEvent">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.example.infrastructure.CommandHandlerUserRepository" target="com.dreweaster.jester.application.commandhandler.AbstractCommandHandlerAggregateRepository">
+      <point x="108.25" y="-26.0" />
+      <point x="152.44729729729738" y="600.0926640926641" />
+      <point x="151.15637065637065" y="600.0926640926641" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="com.dreweaster.jester.example.domain.UserRegistered" target="com.dreweaster.jester.example.domain.UserEvent">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.domain.AggregateRepository.AggregateRoot" target="com.dreweaster.jester.domain.AggregateRepository">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.infrastructure.eventstore.driven.DummyEventStore.DummyPersistedEvent" target="com.dreweaster.jester.domain.AggregateId">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.domain.Aggregate" target="com.dreweaster.jester.domain.BehaviourBuilder">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.infrastructure.eventstore.driven.DummyEventStore.DummyStreamEvent" target="com.dreweaster.jester.application.eventstore.PersistedEvent">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.application.commandhandler.deduplicating.DeduplicatingCommandHandlerFactory" target="com.dreweaster.jester.application.commandhandler.deduplicating.DeduplicatingCommandHandlerFactory.DeduplicatingCommandHandler">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.example.application.UserService" target="com.dreweaster.jester.example.domain.UserRepository">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.infrastructure.eventstore.driven.DummyEventStore.DummyPersistedEvent" target="com.dreweaster.jester.domain.CommandId">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.application.commandhandler.CommandEnvelope" target="com.dreweaster.jester.domain.CommandId">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.infrastructure.eventstore.driven.DummyEventStore.DummyPersistedEvent" target="com.dreweaster.jester.infrastructure.eventstore.driven.DummyEventStore">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.dreweaster.jester.example.infrastructure.ExampleEventHandler.ResponseHandler" target="com.dreweaster.jester.example.infrastructure.ExampleEventHandler">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.7378917378917379" x="760.0868725868727" y="632.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
